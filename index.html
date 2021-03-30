@@ -9,40 +9,40 @@
 	<div class="root">
 		<div class="wallet">
 			<h1>Your wallet</h1>
-			<h1>$ 0.00</h1>
+			<h1 id="wallet">$ 0.00</h1>
 		</div>
 		<div class="actions">
-			<button id="incomeBtn">Income</button><button id="expenseBtn">Expense</button>
+			<button id="mainBtn">+</button>
 		</div>
-		<div class="actionsResults">
-			<div class="incomeAction" id="incomeAction">
-				<form id="incomeForm" onsubmit="newIncome(e);">
-					<label>Income name: </label>
-					<input name="text" type="text" id="incomeTextInput" ><br/>
-					<label>Income value: </label>
-					<input name="value" type="number" id="incomeInput"/><br/>
-					<button id="btnNewIncome" type="submit">OK</button>
-				</form>
-			</div>
-			<div class="expenseAction" id="expenseAction">
-				<form id="expenseForm" onsubmit="newExpense(e);">
-					<label>Expense name: </label>
-					<input name="text" type="text" id="expenseTextInput"/><br/>
-					<label>Expense value: </label>
-					<input name="value" type="number" id="expenseInput" /><br/>
-					<button type="submit">OK</button>
-				</form>
-			</div>
+		<div class="actionsResults" id="actionResults">
+			<label>Name: </label>
+			<input type="text" id="name" ><br/>
+			<label>Value: </label>
+			<input type="number" id="value"/><br/>
+			<button id="btnNewIncome" type="submit">+</button>
+			<button id="btnNewExpense" type="submit">-</button>
 		</div>
 		<div class="lists">
+			<div class="all">
+				<div class="all-header">
+					<h2>All</h2>
+				</div>
+				<ul id="allList">
+				</ul>
+			</div>
 			<div class="allIncomes">
-				<ul id="allIncomesList"></ul>
+				<div class="allIncomes-header">
+					<h2>Incomes</h2>
+				</div>
+				<ul id="allIncomesList">
+				</ul>
 			</div>
 			<div class="allExpenses">
-				<ul id="allExpensesList"></ul>
-			</div>
-			<div class="all">
-				<ul id="allList"></ul>
+				<div class="allExpenses-header">
+					<h2>Expenses</h2>
+				</div>
+				<ul id="allExpensesList">
+				</ul>
 			</div>
 		</div>
 	</div>

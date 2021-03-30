@@ -6,13 +6,21 @@ button:focus{
     outline-offset: 0px;
 }
 input:focus{
-outline: thin dotted;
-outline: 0px auto -webkit-focus-ring-color;
-outline-offset: 0px;
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
 }
 
 body{
     background-color: #d8ffc7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
 }
 
 .root{
@@ -28,6 +36,7 @@ body{
     justify-content: space-between;
     width: 50%;
     margin-left: 25%;
+    cursor: pointer;
 }
 .actions{
     background-color: #b1ff8f;
@@ -39,39 +48,38 @@ body{
     text-align: center;
 }
 .actions button{
-    margin-top: 2%;
-    width: 20%;
-    height: 30px;
-    cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    font-size: 17px;
-    font-weight: bold;
+    margin-top: 1%;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    border-radius: 50%;
+    background-color: #338310;
 }
 .actions button:hover{
-    transition: 2s;
-    width: 30%;
-    border-radius: 15px;
-}
-.actions #incomeBtn{
-    background-color: green;
-}
-.actions #expenseBtn{
-    background-color:red;
-    margin-left: 2%;
+    margin-top: 0.4%;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    color: white;
 }
 .actionsResults{
+    background-color: #b1ff8f;
     margin-top: 2%;
     width: 70%;
-    height: 15vh;
+    height: 20vh;
     margin-left: 15%;
-    display: flex;
-    flex-direction: column;
+    display: none;
     border-radius: 15px;
+    text-align: center;
+}
+.actionsResults label{
+    font-size: 20px;
+    font-weight: bold;
 }
 .actionsResults input{
     width: 20%;
-    height: 20px;
+    height: 30px;
+    font-size: 20px;
     background-color: transparent;
     border: 1px solid transparent;
     border-bottom: 1px solid black;
@@ -79,57 +87,60 @@ body{
 .actionsResults button{
     margin-top: 1%;
     margin-bottom: 0.5%;
-    width: 10%;
-    height: 20px;
-    cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: grey;
+    transform: scale(0.8);
 }
-.incomeAction{
-    display: block;
-    text-align: center;
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 0.5%;
-    background-color: #338310;
-    border-radius: 15px;
+
+.actionsResults button:hover{
+    background-color: green;
+    transform: scale(1);
 }
-.expenseAction{
-    display: none;
-    text-align: center;
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 0.5%;
-    background-color: #338310;
-    border-radius: 15px;
+
+.actionsResults #btnNewExpense:hover{
+    background-color: red;
+    transform: scale(1);
 }
 .lists{
     height: 10vh;
-    margin-top: 1%;
+    margin-top: 2%;
     width: 93%;
     display: flex;
     margin-left: 5%;
 }
-.all{
+.lists :is(.all, .allIncomes, .allExpenses){
     width: 30%;
     margin-left: 1%;
     background-color: #338310;
     height: 40vh;
     border-radius: 5px;
+    background-color: #b1ff8f;
 }
-.allIncomes{
-    width: 30%;
-    margin-left: 1%;
-    background-color: #338310;
-    height: 40vh;
-    border-radius: 5px;
+.lists :is(.all-header, .allIncomes-header, .allExpenses-header){
+    text-align: center;
 }
-.allExpenses{
-    width: 30%;
-    margin-left: 1%;
-    background-color: #338310;
-    height: 40vh;
-    border-radius: 5px;
+
+.lists .allIncomes{
+    color: green;
+}
+.lists .allExpenses{
+    color: red;
+}
+
+.lists ul{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    font-size: 17px;
+    font-weight: bold;
+    height: 30vh;
+    overflow-y: scroll;
+    list-style: none;
+}
+.lists li{
+    margin-top: 1%;
+    margin-left: 2%;
 }
