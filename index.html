@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Budget App</title>
+	<link rel="stylesheet" type="text/css" href="./public/style/app.css">
+</head>
+<body>
+	<div class="root">
+		<div class="wallet">
+			<h1>Your wallet</h1>
+			<h1>$ 0.00</h1>
+		</div>
+		<div class="actions">
+			<button id="incomeBtn">Income</button><button id="expenseBtn">Expense</button>
+		</div>
+		<div class="actionsResults">
+			<div class="incomeAction" id="incomeAction">
+				<form id="incomeForm" onsubmit="newIncome(e);">
+					<label>Income name: </label>
+					<input name="text" type="text" id="incomeTextInput" ><br/>
+					<label>Income value: </label>
+					<input name="value" type="number" id="incomeInput"/><br/>
+					<button id="btnNewIncome" type="submit">OK</button>
+				</form>
+			</div>
+			<div class="expenseAction" id="expenseAction">
+				<form id="expenseForm" onsubmit="newExpense(e);">
+					<label>Expense name: </label>
+					<input name="text" type="text" id="expenseTextInput"/><br/>
+					<label>Expense value: </label>
+					<input name="value" type="number" id="expenseInput" /><br/>
+					<button type="submit">OK</button>
+				</form>
+			</div>
+		</div>
+		<div class="lists">
+			<div class="allIncomes">
+				<ul id="allIncomesList"></ul>
+			</div>
+			<div class="allExpenses">
+				<ul id="allExpensesList"></ul>
+			</div>
+			<div class="all">
+				<ul id="allList"></ul>
+			</div>
+		</div>
+	</div>
+	<script src="./public/script/app.js"></script>
+</body>
+</html>

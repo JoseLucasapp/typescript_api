@@ -1,0 +1,135 @@
+*{margin: 0; padding: 0;}
+
+button:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+input:focus{
+outline: thin dotted;
+outline: 0px auto -webkit-focus-ring-color;
+outline-offset: 0px;
+}
+
+body{
+    background-color: #d8ffc7;
+}
+
+.root{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    height: 90vh;
+    margin-top: 2.5%;
+}
+.wallet{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 25%;
+}
+.actions{
+    background-color: #b1ff8f;
+    height: 10vh;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+    border-radius: 15px;
+    text-align: center;
+}
+.actions button{
+    margin-top: 2%;
+    width: 20%;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.actions button:hover{
+    transition: 2s;
+    width: 30%;
+    border-radius: 15px;
+}
+.actions #incomeBtn{
+    background-color: green;
+}
+.actions #expenseBtn{
+    background-color:red;
+    margin-left: 2%;
+}
+.actionsResults{
+    margin-top: 2%;
+    width: 70%;
+    height: 15vh;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.actionsResults input{
+    width: 20%;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
+}
+.actionsResults button{
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+    width: 10%;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.incomeAction{
+    display: block;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 0.5%;
+    background-color: #338310;
+    border-radius: 15px;
+}
+.expenseAction{
+    display: none;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 0.5%;
+    background-color: #338310;
+    border-radius: 15px;
+}
+.lists{
+    height: 10vh;
+    margin-top: 1%;
+    width: 93%;
+    display: flex;
+    margin-left: 5%;
+}
+.all{
+    width: 30%;
+    margin-left: 1%;
+    background-color: #338310;
+    height: 40vh;
+    border-radius: 5px;
+}
+.allIncomes{
+    width: 30%;
+    margin-left: 1%;
+    background-color: #338310;
+    height: 40vh;
+    border-radius: 5px;
+}
+.allExpenses{
+    width: 30%;
+    margin-left: 1%;
+    background-color: #338310;
+    height: 40vh;
+    border-radius: 5px;
+}
