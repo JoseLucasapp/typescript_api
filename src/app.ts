@@ -1,1 +1,3 @@
-console.log('api on');
+import {Server} from './config/server';
+
+new Server().getApp();
