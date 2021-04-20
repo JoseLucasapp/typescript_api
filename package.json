@@ -1,0 +1,37 @@
+{
+  "name": "typescript_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "nodemon ./src/app.ts",
+    "build": "sucrase ./src -d ./dist --transforms typescript,imports"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseLucasapp/typescript_api.git"
+  },
+  "keywords": [],
+  "author": "José Lucas <josluc2016@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoseLucasapp/typescript_api/issues"
+  },
+  "homepage": "https://github.com/JoseLucasapp/typescript_api#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^2.0.2",
+    "eslint": "^7.24.0",
+    "nodemon": "^2.0.7",
+    "sucrase": "^3.18.1",
+    "typescript": "^4.2.4"
+  }
+}
