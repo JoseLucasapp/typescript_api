@@ -1,4 +1,4 @@
-import {Express} from './types';
+import {Express} from '../api/types/express.types';
 
 import {UserRoutes} from '../api/routes/user.routes';
 

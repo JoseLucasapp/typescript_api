@@ -1,4 +1,4 @@
-import {Request, Response} from '../../config/types';
+import {Request, Response} from '../types/express.types';
 
 import {registryNewUser} from '../models/user.model';
 

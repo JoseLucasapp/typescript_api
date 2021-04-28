@@ -4,7 +4,7 @@ import {Connection} from '../api/database/connection/dbConnection';
 import {Middlewares} from './middlewares';
 import {Routes} from './routes';
 
-import {Express} from './types';
+import {Express} from '../api/types/express.types';
 
 export class Server{
     private app: Express;

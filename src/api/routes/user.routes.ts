@@ -1,4 +1,4 @@
-import {Express} from '../../config/types';
+import {Express} from '../types/express.types';
 
 import UserController from '../controllers/user.controller';
 

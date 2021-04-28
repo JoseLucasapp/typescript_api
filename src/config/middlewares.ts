@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 
-import {Express} from './types';
+import {Express} from '../api/types/express.types';
 
 export class Middlewares{
 
