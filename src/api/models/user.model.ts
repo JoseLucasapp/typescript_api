@@ -27,13 +27,15 @@ export const editUser = async(id, data)=>{
         }
     });
 
-    return await User.findOne({_id: id});
+    return "Updated";
 }
 
 export const removeUser = async(id)=>{
-    return await User.deleteOne({_id:id}).exec((err)=>{
+    await User.deleteOne({_id:id}).exec((err)=>{
         if(err){
             return err;
         }
     });
+
+    return "Deleted";
 }
